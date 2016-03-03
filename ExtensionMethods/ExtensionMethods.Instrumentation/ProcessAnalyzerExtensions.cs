@@ -6,6 +6,7 @@ namespace ExtensionMethods.Instrumentation
 {
     public static class ProcessAnalyzerExtensions
     {
+        //Additional state is not collected by GC so it will continue to grow through use
         private static Dictionary<Guid, Stopwatch> _Stopwatches = new Dictionary<Guid, Stopwatch>();
 
         public static double GetPreciseElapsedTime(this ProcessAnalyzer analyzer)

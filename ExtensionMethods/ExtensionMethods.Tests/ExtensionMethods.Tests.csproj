@@ -46,6 +46,7 @@
     <Compile Include="DataSourceCollectionExtensionTests.cs" />
     <Compile Include="DataSourceExtensionTests.cs" />
     <Compile Include="DateTimeExtensionsTests.cs" />
+    <Compile Include="ExceptionExtensionsTests.cs" />
     <Compile Include="InstrumentationTests.cs" />
     <Compile Include="ObjectExtensionsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
