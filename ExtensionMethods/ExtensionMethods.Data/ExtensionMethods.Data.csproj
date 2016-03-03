@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="DataItem.cs" />
     <Compile Include="IDataSource.cs" />
+    <Compile Include="IDataSourceCollectionExtensions.cs" />
     <Compile Include="IDataSourceExtensions.cs" />
     <Compile Include="Implementations\XmlDataSource.cs" />
     <Compile Include="Implementations\SqlDataSource.cs" />
