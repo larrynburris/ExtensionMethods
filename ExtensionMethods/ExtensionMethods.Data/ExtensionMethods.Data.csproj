@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{69DE6E65-D93F-4308-80CA-F0BD080D989F}</ProjectGuid>
+    <ProjectGuid>{4E2BD375-A459-479A-BC56-9D198B4AC4E2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ExtensionMethods.Tests</RootNamespace>
-    <AssemblyName>ExtensionMethods.Tests</AssemblyName>
+    <RootNamespace>ExtensionMethods.Data</RootNamespace>
+    <AssemblyName>ExtensionMethods.Data</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,10 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="nunit.framework, Version=3.0.5813.39032, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.3.0.1\lib\net40\nunit.framework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,25 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataSourceExtensionTests.cs" />
-    <Compile Include="DateTimeExtensionsTests.cs" />
+    <Compile Include="DataItem.cs" />
+    <Compile Include="IDataSource.cs" />
+    <Compile Include="IDataSourceExtensions.cs" />
+    <Compile Include="Implementations\XmlDataSource.cs" />
+    <Compile Include="Implementations\SqlDataSource.cs" />
+    <Compile Include="Implementations\ApiDataSource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ExtensionMethods.Data\ExtensionMethods.Data.csproj">
-      <Project>{4e2bd375-a459-479a-bc56-9d198b4ac4e2}</Project>
-      <Name>ExtensionMethods.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ExtensionMethods\ExtensionMethods.csproj">
-      <Project>{3db1c51b-cf33-4a18-b406-2fc2c1b2d195}</Project>
-      <Name>ExtensionMethods</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
