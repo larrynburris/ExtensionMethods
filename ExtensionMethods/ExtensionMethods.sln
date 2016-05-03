@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "ExtensionMethods\ExtensionMethods.csproj", "{3DB1C51B-CF33-4A18-B406-2FC2C1B2D195}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods.Data", "ExtensionMethods.Data\ExtensionMethods.Data.csproj", "{4E2BD375-A459-479A-BC56-9D198B4AC4E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods.Instrumentation", "ExtensionMethods.Instrumentation\ExtensionMethods.Instrumentation.csproj", "{17E267F0-012A-4119-9F40-0E50AA600C24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudPatterns", "CloudPatterns\CloudPatterns.csproj", "{454BA515-FB6C-4EF7-BAB1-EBEE0D97D0C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{17E267F0-012A-4119-9F40-0E50AA600C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17E267F0-012A-4119-9F40-0E50AA600C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17E267F0-012A-4119-9F40-0E50AA600C24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{454BA515-FB6C-4EF7-BAB1-EBEE0D97D0C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{454BA515-FB6C-4EF7-BAB1-EBEE0D97D0C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{454BA515-FB6C-4EF7-BAB1-EBEE0D97D0C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{454BA515-FB6C-4EF7-BAB1-EBEE0D97D0C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
